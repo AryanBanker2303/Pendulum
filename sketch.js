@@ -55,7 +55,7 @@ function draw() {
   Engine.update(engine);
 
 
-  fill ("brown");
+  fill (random(0,255),random(0,255),random(0,255));
 rectMode(CENTER);
 rect(holder.position.x,holder.position.y,200,20);
 
@@ -64,7 +64,6 @@ bobColorR = random(0,255);
 bobColorG = random(0,255);
 bobColorB = random(0,255);
 }
-
 fill(bobColorR,bobColorG,bobColorB);
 ellipseMode(RADIUS);
 ellipse(ball.position.x,ball.position.y,40);
